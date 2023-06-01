@@ -1,4 +1,4 @@
-#Find Whether a Number is Prime or Not
+//Find Whether a Number is Prime or Not
 
 import java.util.Scanner;
 public class Main
@@ -7,17 +7,25 @@ public class Main
 	    
 	    Scanner s = new Scanner(System.in);
 	    int x=s.nextInt();
+	    
+	    // n set to 2 because 1 is neither prime nor composite
 	    int n = 2;
+	    
+	    //flag to set when a number is found not a prime initially set to 1
 	    int flag=1;
+	    
+	    /* logic n*n >= x then if x is not divisible by prime numbers 
+	    less than n then x is a prime else it is not a prime */
 	    do
 	    {
-	        System.out.println(n);
+	       
 	        if(x%n==0)
 	        {
-	            flag=0;
+	            //flag set to 0 when x gets divided by n and remainder is 0
+		    flag=0;
 	        }
-	        n+=1;
-	    }while(x>=n*n);
+	        n+=1; 
+	    }while(x>=n*n);//condition applies to true ,upto when x is greater than n square
 	   
 	    if(flag==1)
 	    {
