@@ -21,7 +21,7 @@ public class Main
 	    }
 	    else if(x==2)
 	    {
-	        System.out.println("Prime");
+	        System.out.println("Prime Number");
 	    }
 	    else{
 	        /* logic n*n >= x then if x is not divisible by prime numbers 
