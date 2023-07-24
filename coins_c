@@ -1,0 +1,20 @@
+#include<stdio.h>
+
+int main()
+{
+    int coins,five,two,one,fr,tr,orr;
+    
+    scanf("%d",&coins);
+    
+    five = coins/5;
+    fr=coins%5;
+    two = fr/2;
+    tr=coins%2;
+    one = tr/1;
+    orr=coins%1;
+    
+    printf("%d %d %d %d",(five+two+one),five,two,one);
+    
+
+    return 0;
+}
